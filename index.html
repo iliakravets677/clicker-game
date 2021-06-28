@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clicker game #1</title>
+</head>
+<body>
+
+    <div class="toolbar">
+        <div class="toolbar__img">
+            <img src="img/kills.png" alt="">
+            <p id="kills" class="toolbar__item">0</p>
+        </div>
+        <div class="toolbar__img">
+            <img src="img/damage_panel.png" alt="">
+            <p id="damage" class="toolbar__item">1</p>
+        </div>
+    </div>
+
+
+
+    <div class="progress">
+        <div class="progress__line-bg">
+            <div class="progress__line" id="progressLine"></div>
+        </div>
+        <h1 id="entityHp"></h1>
+    </div>
+    <div class="entity">
+        <img src="img/green_slime.png" id="entity">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

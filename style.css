@@ -1,0 +1,83 @@
+@font-face {
+    font-family: pixel;
+    src: url(fonts/Pixeboy.woff);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #75c4a5;
+}
+
+.toolbar__img {
+    position: relative;
+    width: 100%;
+}
+
+.toolbar__item {
+    margin: -42px 0 60px 60px;
+    font-family: pixel;
+    font-size: 32px;
+    color: #fff;
+}
+
+.entity {
+    text-align: center;
+}
+
+#entity:active {
+    filter: invert(11%) sepia(99%) saturate(7286%) hue-rotate(0deg) brightness(103%) contrast(104%);
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress__line {
+    background: rgb(236, 96, 96);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    top: 0;
+    position: absolute;
+    text-align: center;
+}
+#entityHp {
+    font-family: pixel;
+    position: absolute;
+    top: 192px;
+    text-align: center;
+    color: rgb(22, 22, 22);
+}
+.progress__line-bg{
+    background: #ccc;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 445px;
+}
+
+@media (max-width: 560px) {
+    #entity{
+        margin-left: 20px;
+    }
+
+    .progress__line-bg {
+        max-width: 350px;
+    }
+
+    .toolbar {
+        display: flex;
+    }
+
+    .toolbar__item {
+        margin: -42px 0 60px 55px;
+    }
+}
